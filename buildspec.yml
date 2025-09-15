@@ -8,7 +8,5 @@ phases:
       - aws cloudformation package --template-file pdftotxt.yaml --s3-bucket artifacts-bucket-gl-ram --output-template-file lambdaoutput.yaml
 
 artifacts:
-  type: zip
   files:
-    - pdftotxt.yaml
     - lambdaoutput.yaml
